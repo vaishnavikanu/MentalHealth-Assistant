@@ -1,0 +1,37 @@
+# DSM-5 Major Depressive Disorder Criteria
+
+## Diagnostic Criteria
+A. Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure.
+
+1. Depressed mood most of the day, nearly every day.
+2. Markedly diminished interest or pleasure in all, or almost all, activities most of the day.
+3. Significant weight loss when not dieting or weight gain, or decrease or increase in appetite nearly every day.
+4. Insomnia or hypersomnia nearly every day.
+5. Psychomotor agitation or retardation nearly every day.
+6. Fatigue or loss of energy nearly every day.
+7. Feelings of worthlessness or excessive or inappropriate guilt.
+8. Diminished ability to think or concentrate, or indecisiveness.
+9. Recurrent thoughts of death, recurrent suicidal ideation without a specific plan, or a suicide attempt.
+
+## CBT for Depression
+
+Cognitive Behavioral Therapy (CBT) is a first-line treatment for depression. It focuses on identifying and changing negative thought patterns and behaviors.
+
+### Core Components:
+1. **Cognitive Restructuring**: Identifying automatic negative thoughts and challenging cognitive distortions
+2. **Behavioral Activation**: Increasing engagement in rewarding activities
+3. **Problem-Solving Skills**: Developing coping strategies for life stressors
+4. **Relapse Prevention**: Creating a plan for maintaining gains
+
+### Evidence Base:
+Multiple RCTs demonstrate CBT efficacy for mild to moderate depression. Combined with medication for severe cases.
+
+## Anxiety Disorders Overview
+
+### Generalized Anxiety Disorder (GAD)
+Excessive anxiety and worry occurring more days than not for at least 6 months, about a number of events or activities.
+
+### Treatment:
+- CBT is first-line psychotherapy
+- SSRIs/SNRIs are first-line pharmacotherapy
+- Combination therapy for severe cases

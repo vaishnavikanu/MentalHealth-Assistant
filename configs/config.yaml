@@ -1,0 +1,55 @@
+# RAG System Configuration
+
+# Model configurations
+models:
+  sbert:
+    name: "sentence-transformers/all-MiniLM-L6-v2"
+    device: "cpu"
+    max_length: 512
+  medcpt:
+    name: "ncbi/MedCPT-Article-Encoder"
+    device: "cpu"
+    max_length: 512
+  reranker:
+    name: "BAAI/bge-reranker-base"
+    device: "cpu"
+    max_length: 512
+  generator:
+    name: "microsoft/phi-2"
+    device: "cpu"
+    max_length: 2048
+    temperature: 0.7
+    top_p: 0.9
+
+# Chunking configuration
+chunking:
+  parent_size: 512
+  child_size: 128
+  overlap_sentences: 2
+
+# Retrieval configuration
+retrieval:
+  dense_top_k: 20
+  sparse_top_k: 20
+  rrf_k: 60
+  final_top_k: 5
+  kg_expansion_limit: 10
+
+# Vector store configuration
+vectorstore:
+  index_path: "./indexes"
+  collections:
+    - "curated_kb_sbert"
+    - "curated_kb_medcpt"
+    - "user_private"
+    - "clinician_private"
+
+# Data paths
+data:
+  curated_kb_path: "./data/curated_kb"
+  user_content_path: "./data/user_content"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {module}:{function}:{line} | {message}"

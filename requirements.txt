@@ -1,0 +1,32 @@
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+accelerate>=0.24.0
+
+# Vector storage
+faiss-cpu>=1.7.4
+
+# Document processing
+pymupdf>=1.23.0
+python-docx>=1.1.0
+
+# Text processing
+nltk>=3.8.0
+rank-bm25>=0.2.2
+
+# Utilities
+numpy>=1.24.0
+pandas>=2.0.0
+pydantic>=2.0.0
+pyyaml>=6.0.0
+tqdm>=4.66.0
+python-dotenv>=1.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Optional: for faster tokenization
+tokenizers>=0.15.0
+
+requests

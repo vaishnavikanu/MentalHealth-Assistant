@@ -1,0 +1,18 @@
+Patient: patient_001
+Date: 2024-01-15
+Presenting Problem: Depressive symptoms x 3 weeks
+PHQ-9 Score: 17 (moderately severe)
+GAD-7 Score: 12 (moderate anxiety)
+
+Assessment:
+- Meets DSM-5 criteria for MDD, single episode, moderate severity
+- Comorbid GAD symptoms
+- No SI with plan/intent reported
+- Good insight, motivated for treatment
+
+Treatment Plan:
+1. Start Sertraline 50mg daily, titrate to 100mg at 2 weeks
+2. Refer for CBT - weekly sessions
+3. Safety plan completed
+4. Follow-up in 2 weeks
+5. Monitor for activation syndrome

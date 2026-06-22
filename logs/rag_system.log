@@ -1,0 +1,351 @@
+2026-06-17 06:11:06 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 06:11:07 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 06:11:07 | INFO | main:main:132 | Starting RAG System
+2026-06-17 06:11:07 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 06:11:57 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 06:11:57 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 06:13:06 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 06:13:06 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 06:13:14 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 06:13:14 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 06:13:16 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 06:13:16 | INFO | rag_pipeline:build_indexes:43 | Building all indexes...
+2026-06-17 06:13:16 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 06:13:16 | INFO | curated_kb:ingest:19 | Found 0 PDF files
+2026-06-17 06:13:16 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 0 documents
+2026-06-17 06:13:16 | INFO | rag_pipeline:build_indexes:63 | Index building complete in 0.00s
+2026-06-17 06:13:16 | INFO | rag_pipeline:ingest_user_data:66 | Ingesting data for user: patient_001
+2026-06-17 06:13:16 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 06:13:16 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 06:13:16 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 06:13:16 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 06:13:16 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 06:13:16 | INFO | store:_load_or_create:55 | Creating new index: user_patient_001_private
+2026-06-17 06:13:16 | INFO | store:add_chunks:64 | Adding 1 chunks to user_patient_001_private
+2026-06-17 06:13:16 | INFO | store:_save:112 | Saved user_patient_001_private: 1 vectors
+2026-06-17 06:13:16 | INFO | rag_pipeline:ingest_clinician_data:79 | Ingesting data for clinician: clinician_001
+2026-06-17 06:13:16 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 06:13:16 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 06:13:16 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 06:13:16 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 06:13:16 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 06:13:16 | INFO | store:_load_or_create:55 | Creating new index: clinician_clinician_001_private
+2026-06-17 06:13:16 | INFO | store:add_chunks:64 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 06:32:25 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 06:32:25 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 06:32:25 | INFO | main:main:132 | Starting RAG System
+2026-06-17 06:34:36 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 06:34:36 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 06:34:36 | INFO | main:main:132 | Starting RAG System
+2026-06-17 06:34:36 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 06:34:52 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 06:34:52 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 06:34:54 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 06:34:54 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 06:35:03 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 06:35:03 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 06:35:05 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 06:35:05 | INFO | rag_pipeline:build_indexes:43 | Building all indexes...
+2026-06-17 06:35:05 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 06:35:05 | INFO | curated_kb:ingest:19 | Found 0 PDF files
+2026-06-17 06:35:05 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 0 documents
+2026-06-17 06:35:05 | INFO | rag_pipeline:build_indexes:63 | Index building complete in 0.00s
+2026-06-17 06:35:05 | INFO | rag_pipeline:ingest_user_data:66 | Ingesting data for user: patient_001
+2026-06-17 06:35:05 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 06:35:05 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 06:35:05 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 06:35:05 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 06:35:05 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 06:35:06 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-06-17 06:35:06 | INFO | store:_load_or_create:57 | Loaded 1 vectors from user_patient_001_private
+2026-06-17 06:35:06 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-06-17 06:35:06 | INFO | store:_save:116 | Saved user_patient_001_private: 2 vectors
+2026-06-17 06:35:06 | INFO | rag_pipeline:ingest_clinician_data:82 | Ingesting data for clinician: clinician_001
+2026-06-17 06:35:06 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 06:35:06 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 06:35:06 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 06:35:06 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 06:35:06 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 06:35:06 | INFO | store:_load_or_create:59 | Creating new index: clinician_clinician_001_private
+2026-06-17 06:35:06 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 06:35:06 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 2 vectors
+2026-06-17 06:35:06 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=I've been feeling really sad and hopeless lately. ...
+2026-06-17 06:35:06 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I've been feeling really sad and hopeless lately. What can help?
+2026-06-17 06:35:06 | INFO | store:_load_or_create:59 | Creating new index: curated_kb_sbert
+2026-06-17 06:35:06 | INFO | retriever:retrieve:119 | Patient retrieval: 1 fused results
+2026-06-17 06:35:06 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 06:35:20 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 06:35:20 | INFO | reranker:rerank:87 | Lightweight reranked 1 -> 1 results
+2026-06-17 06:35:20 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=I can't sleep and have no appetite. Is this normal...
+2026-06-17 06:35:20 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I can't sleep and have no appetite. Is this normal?
+2026-06-17 06:35:20 | INFO | retriever:retrieve:119 | Patient retrieval: 1 fused results
+2026-06-17 06:35:20 | INFO | reranker:rerank:87 | Lightweight reranked 1 -> 1 results
+2026-06-17 06:35:20 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=How do I know if I need professional help?...
+2026-06-17 06:35:20 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: How do I know if I need professional help?
+2026-06-17 06:35:20 | INFO | retriever:retrieve:119 | Patient retrieval: 1 fused results
+2026-06-17 06:35:20 | INFO | reranker:rerank:87 | Lightweight reranked 1 -> 1 results
+2026-06-17 06:35:20 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=What are the DSM-5 criteria for Major Depressive D...
+2026-06-17 06:35:20 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: What are the DSM-5 criteria for Major Depressive Disorder?
+2026-06-17 06:35:20 | INFO | store:_load_or_create:59 | Creating new index: curated_kb_medcpt
+2026-06-17 06:35:20 | INFO | retriever:retrieve:166 | Clinician retrieval: 2 results after KG expansion
+2026-06-17 06:35:20 | INFO | reranker:rerank:87 | Lightweight reranked 2 -> 2 results
+2026-06-17 06:35:20 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=First-line treatment options for moderate MDD with...
+2026-06-17 06:35:20 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: First-line treatment options for moderate MDD with comorbid anxiety?
+2026-06-17 06:35:20 | INFO | retriever:retrieve:166 | Clinician retrieval: 2 results after KG expansion
+2026-06-17 06:35:21 | INFO | reranker:rerank:87 | Lightweight reranked 2 -> 2 results
+2026-06-17 06:35:21 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=CBT protocol for depression - key components and s...
+2026-06-17 06:35:21 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: CBT protocol for depression - key components and session structure?
+2026-06-17 06:35:21 | INFO | retriever:retrieve:166 | Clinician retrieval: 2 results after KG expansion
+2026-06-17 06:35:21 | INFO | reranker:rerank:87 | Lightweight reranked 2 -> 2 results
+2026-06-17 06:35:21 | INFO | main:main:156 | RAG System demo complete
+2026-06-17 08:04:04 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 08:04:04 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 08:04:04 | INFO | main:main:167 | Starting RAG System
+2026-06-17 08:04:04 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 08:04:21 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 08:04:21 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 08:04:24 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 08:04:24 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 08:04:31 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 08:04:31 | INFO | embedder:_load_model:59 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 08:04:33 | INFO | embedder:_load_model:64 | MedCPT model loaded successfully
+2026-06-17 08:04:33 | INFO | rag_pipeline:build_indexes:43 | Building all indexes...
+2026-06-17 08:04:33 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 08:04:33 | INFO | curated_kb:ingest:19 | Found 2 PDF files
+2026-06-17 08:04:33 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:04:34 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:04:34 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:04:34 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:04:34 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 4 documents
+2026-06-17 08:04:34 | INFO | chunker:chunk_documents:124 | Total chunks created: 31
+2026-06-17 08:04:34 | INFO | store:_load_or_create:59 | Creating new index: curated_kb_sbert
+2026-06-17 08:04:34 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-06-17 08:04:34 | INFO | store:_save:116 | Saved curated_kb_sbert: 16 vectors
+2026-06-17 08:04:36 | INFO | store:_load_or_create:59 | Creating new index: curated_kb_medcpt
+2026-06-17 08:04:36 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_medcpt
+2026-06-17 08:04:36 | INFO | store:_save:116 | Saved curated_kb_medcpt: 16 vectors
+2026-06-17 08:04:36 | INFO | rag_pipeline:build_indexes:63 | Index building complete in 3.24s
+2026-06-17 08:04:36 | INFO | rag_pipeline:ingest_user_data:66 | Ingesting data for user: patient_001
+2026-06-17 08:04:36 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 08:04:36 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 08:04:36 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 08:04:36 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 08:04:36 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 08:04:36 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-06-17 08:04:36 | INFO | store:_load_or_create:57 | Loaded 2 vectors from user_patient_001_private
+2026-06-17 08:04:36 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-06-17 08:04:36 | INFO | store:_save:116 | Saved user_patient_001_private: 3 vectors
+2026-06-17 08:04:36 | INFO | rag_pipeline:ingest_clinician_data:82 | Ingesting data for clinician: clinician_001
+2026-06-17 08:04:36 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 08:04:36 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 08:04:36 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 08:04:36 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 08:04:36 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 08:04:36 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-06-17 08:04:36 | INFO | store:_load_or_create:57 | Loaded 2 vectors from clinician_clinician_001_private
+2026-06-17 08:04:36 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 08:04:36 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 4 vectors
+2026-06-17 08:05:34 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=1, query=What is ACCEPTS in distress tollerance?...
+2026-06-17 08:05:34 | INFO | retriever:retrieve:99 | Patient retrieval for user 1: What is ACCEPTS in distress tollerance?
+2026-06-17 08:05:34 | INFO | store:_load_or_create:59 | Creating new index: user_1_private
+2026-06-17 08:05:34 | INFO | retriever:build_index:30 | BM25 index built with 16 documents
+2026-06-17 08:05:34 | INFO | retriever:retrieve:119 | Patient retrieval: 16 fused results
+2026-06-17 08:05:34 | INFO | embedder:_load_model:29 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 08:05:42 | INFO | embedder:_load_model:33 | SBERT model loaded successfully
+2026-06-17 08:05:43 | INFO | reranker:rerank:87 | Lightweight reranked 16 -> 5 results
+2026-06-17 08:08:38 | INFO | rag_pipeline:query:100 | Processing query: role=I feel overwhelmed and can’t control my emotions, user_id=1, query=...
+2026-06-17 08:09:00 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_002, query=I feel overwhelmed and can’t control my emotions...
+2026-06-17 08:09:00 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_002: I feel overwhelmed and can’t control my emotions
+2026-06-17 08:09:00 | INFO | store:_load_or_create:59 | Creating new index: user_patient_002_private
+2026-06-17 08:09:00 | INFO | retriever:retrieve:119 | Patient retrieval: 16 fused results
+2026-06-17 08:09:00 | INFO | reranker:rerank:87 | Lightweight reranked 16 -> 5 results
+2026-06-17 08:34:46 | INFO | main:main:207 | RAG System demo complete
+2026-06-17 08:35:57 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 08:35:57 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 08:35:57 | INFO | main:main:170 | Starting RAG System
+2026-06-17 08:35:57 | INFO | embedder:_load_model:30 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 08:36:13 | INFO | embedder:_load_model:34 | SBERT model loaded successfully
+2026-06-17 08:36:13 | INFO | embedder:_load_model:60 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 08:36:15 | INFO | embedder:_load_model:65 | MedCPT model loaded successfully
+2026-06-17 08:36:15 | INFO | rag_pipeline:build_indexes:43 | Building all indexes...
+2026-06-17 08:36:15 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 08:36:15 | INFO | curated_kb:ingest:19 | Found 2 PDF files
+2026-06-17 08:36:15 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:36:16 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:36:16 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:36:16 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:36:16 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 4 documents
+2026-06-17 08:36:16 | INFO | chunker:chunk_documents:124 | Total chunks created: 31
+2026-06-17 08:36:16 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_sbert
+2026-06-17 08:36:16 | INFO | store:_load_or_create:57 | Loaded 16 vectors from curated_kb_sbert
+2026-06-17 08:36:16 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-06-17 08:36:16 | INFO | store:_save:116 | Saved curated_kb_sbert: 32 vectors
+2026-06-17 08:36:18 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_medcpt
+2026-06-17 08:36:18 | INFO | store:_load_or_create:57 | Loaded 16 vectors from curated_kb_medcpt
+2026-06-17 08:36:18 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_medcpt
+2026-06-17 08:36:18 | INFO | store:_save:116 | Saved curated_kb_medcpt: 32 vectors
+2026-06-17 08:36:18 | INFO | rag_pipeline:build_indexes:63 | Index building complete in 2.24s
+2026-06-17 08:36:18 | INFO | rag_pipeline:ingest_user_data:66 | Ingesting data for user: patient_001
+2026-06-17 08:36:18 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 08:36:18 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 08:36:18 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 08:36:18 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 08:36:18 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 08:36:18 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-06-17 08:36:18 | INFO | store:_load_or_create:57 | Loaded 3 vectors from user_patient_001_private
+2026-06-17 08:36:18 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-06-17 08:36:18 | INFO | store:_save:116 | Saved user_patient_001_private: 4 vectors
+2026-06-17 08:36:18 | INFO | rag_pipeline:ingest_clinician_data:82 | Ingesting data for clinician: clinician_001
+2026-06-17 08:36:18 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 08:36:18 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 08:36:18 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 08:36:18 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 08:36:18 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 08:36:18 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-06-17 08:36:18 | INFO | store:_load_or_create:57 | Loaded 4 vectors from clinician_clinician_001_private
+2026-06-17 08:36:18 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 08:36:18 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 6 vectors
+2026-06-17 08:36:21 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=I've been feeling really sad and hopeless lately. ...
+2026-06-17 08:36:21 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I've been feeling really sad and hopeless lately. What can help?
+2026-06-17 08:36:21 | INFO | retriever:build_index:30 | BM25 index built with 32 documents
+2026-06-17 08:36:22 | INFO | retriever:retrieve:119 | Patient retrieval: 17 fused results
+2026-06-17 08:47:32 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 08:47:32 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 08:47:32 | INFO | main:main:170 | Starting RAG System
+2026-06-17 08:47:32 | INFO | embedder:_load_model:30 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 08:47:50 | INFO | embedder:_load_model:34 | SBERT model loaded successfully
+2026-06-17 08:47:50 | INFO | embedder:_load_model:60 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 08:47:53 | INFO | embedder:_load_model:65 | MedCPT model loaded successfully
+2026-06-17 08:47:53 | INFO | rag_pipeline:build_indexes:43 | Building all indexes...
+2026-06-17 08:47:53 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 08:47:53 | INFO | curated_kb:ingest:19 | Found 2 PDF files
+2026-06-17 08:47:53 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:47:54 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 08:47:54 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:47:54 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 08:47:54 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 4 documents
+2026-06-17 08:47:54 | INFO | chunker:chunk_documents:124 | Total chunks created: 31
+2026-06-17 08:47:54 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_sbert
+2026-06-17 08:47:54 | INFO | store:_load_or_create:57 | Loaded 32 vectors from curated_kb_sbert
+2026-06-17 08:47:54 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-06-17 08:47:54 | INFO | store:_save:116 | Saved curated_kb_sbert: 48 vectors
+2026-06-17 08:47:56 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_medcpt
+2026-06-17 08:47:56 | INFO | store:_load_or_create:57 | Loaded 32 vectors from curated_kb_medcpt
+2026-06-17 08:47:56 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_medcpt
+2026-06-17 08:47:56 | INFO | store:_save:116 | Saved curated_kb_medcpt: 48 vectors
+2026-06-17 08:47:56 | INFO | rag_pipeline:build_indexes:63 | Index building complete in 2.39s
+2026-06-17 08:47:56 | INFO | rag_pipeline:ingest_user_data:66 | Ingesting data for user: patient_001
+2026-06-17 08:47:56 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 08:47:56 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 08:47:56 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 08:47:56 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 08:47:56 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 08:47:56 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-06-17 08:47:56 | INFO | store:_load_or_create:57 | Loaded 4 vectors from user_patient_001_private
+2026-06-17 08:47:56 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-06-17 08:47:56 | INFO | store:_save:116 | Saved user_patient_001_private: 5 vectors
+2026-06-17 08:47:56 | INFO | rag_pipeline:ingest_clinician_data:82 | Ingesting data for clinician: clinician_001
+2026-06-17 08:47:56 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 08:47:56 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 08:47:56 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 08:47:56 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 08:47:56 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 08:47:56 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-06-17 08:47:56 | INFO | store:_load_or_create:57 | Loaded 6 vectors from clinician_clinician_001_private
+2026-06-17 08:47:56 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 08:47:56 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 8 vectors
+2026-06-17 08:48:03 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=I've been feeling really sad and hopeless lately. ...
+2026-06-17 08:48:03 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I've been feeling really sad and hopeless lately. What can help?
+2026-06-17 08:48:03 | INFO | retriever:build_index:30 | BM25 index built with 48 documents
+2026-06-17 08:48:03 | INFO | retriever:retrieve:119 | Patient retrieval: 12 fused results
+2026-06-17 08:48:03 | INFO | reranker:rerank:87 | Lightweight reranked 12 -> 5 results
+2026-06-17 08:48:03 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=I can't sleep and have no appetite. Is this normal...
+2026-06-17 08:48:03 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I can't sleep and have no appetite. Is this normal?
+2026-06-17 08:48:03 | INFO | retriever:retrieve:119 | Patient retrieval: 15 fused results
+2026-06-17 08:48:04 | INFO | reranker:rerank:87 | Lightweight reranked 15 -> 5 results
+2026-06-17 08:48:04 | INFO | rag_pipeline:query:100 | Processing query: role=patient, user_id=patient_001, query=How do I know if I need professional help?...
+2026-06-17 08:48:04 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: How do I know if I need professional help?
+2026-06-17 08:48:04 | INFO | retriever:retrieve:119 | Patient retrieval: 10 fused results
+2026-06-17 08:48:04 | INFO | reranker:rerank:87 | Lightweight reranked 10 -> 5 results
+2026-06-17 08:48:04 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=What are the DSM-5 criteria for Major Depressive D...
+2026-06-17 08:48:04 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: What are the DSM-5 criteria for Major Depressive Disorder?
+2026-06-17 08:48:04 | INFO | retriever:retrieve:166 | Clinician retrieval: 6 results after KG expansion
+2026-06-17 08:48:04 | INFO | reranker:rerank:87 | Lightweight reranked 6 -> 5 results
+2026-06-17 08:48:04 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=First-line treatment options for moderate MDD with...
+2026-06-17 08:48:04 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: First-line treatment options for moderate MDD with comorbid anxiety?
+2026-06-17 08:48:04 | INFO | retriever:retrieve:166 | Clinician retrieval: 9 results after KG expansion
+2026-06-17 08:48:05 | INFO | reranker:rerank:87 | Lightweight reranked 9 -> 5 results
+2026-06-17 08:48:05 | INFO | rag_pipeline:query:100 | Processing query: role=clinician, user_id=clinician_001, query=CBT protocol for depression - key components and s...
+2026-06-17 08:48:05 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: CBT protocol for depression - key components and session structure?
+2026-06-17 08:48:05 | INFO | retriever:retrieve:166 | Clinician retrieval: 10 results after KG expansion
+2026-06-17 08:48:05 | INFO | reranker:rerank:87 | Lightweight reranked 10 -> 5 results
+2026-06-17 08:48:05 | INFO | main:main:210 | RAG System demo complete
+2026-06-17 09:07:50 | INFO | logging:setup_logging:27 | Logging configured
+2026-06-17 09:07:50 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-06-17 09:07:50 | INFO | main:main:170 | Starting RAG System
+2026-06-17 09:07:50 | INFO | embedder:_load_model:30 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-17 09:08:08 | INFO | embedder:_load_model:34 | SBERT model loaded successfully
+2026-06-17 09:08:08 | INFO | embedder:_load_model:60 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-06-17 09:08:11 | INFO | embedder:_load_model:65 | MedCPT model loaded successfully
+2026-06-17 09:08:11 | INFO | rag_pipeline:build_indexes:46 | Building all indexes...
+2026-06-17 09:08:11 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-06-17 09:08:11 | INFO | curated_kb:ingest:19 | Found 2 PDF files
+2026-06-17 09:08:11 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 09:08:11 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-06-17 09:08:11 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 09:08:11 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-06-17 09:08:11 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 4 documents
+2026-06-17 09:08:11 | INFO | chunker:chunk_documents:124 | Total chunks created: 31
+2026-06-17 09:08:11 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_sbert
+2026-06-17 09:08:11 | INFO | store:_load_or_create:57 | Loaded 48 vectors from curated_kb_sbert
+2026-06-17 09:08:11 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-06-17 09:08:11 | INFO | store:_save:116 | Saved curated_kb_sbert: 64 vectors
+2026-06-17 09:08:11 | INFO | rag_pipeline:build_indexes:89 | Index building complete in 0.60s
+2026-06-17 09:08:11 | INFO | rag_pipeline:ingest_user_data:92 | Ingesting data for user: patient_001
+2026-06-17 09:08:11 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-06-17 09:08:11 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-06-17 09:08:11 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-06-17 09:08:11 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-06-17 09:08:11 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-06-17 09:08:11 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-06-17 09:08:11 | INFO | store:_load_or_create:57 | Loaded 5 vectors from user_patient_001_private
+2026-06-17 09:08:11 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-06-17 09:08:11 | INFO | store:_save:116 | Saved user_patient_001_private: 6 vectors
+2026-06-17 09:08:11 | INFO | rag_pipeline:ingest_clinician_data:108 | Ingesting data for clinician: clinician_001
+2026-06-17 09:08:11 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-06-17 09:08:11 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-06-17 09:08:11 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-06-17 09:08:11 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-06-17 09:08:11 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-06-17 09:08:12 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-06-17 09:08:12 | INFO | store:_load_or_create:57 | Loaded 8 vectors from clinician_clinician_001_private
+2026-06-17 09:08:12 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-06-17 09:08:12 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 10 vectors
+2026-06-17 09:08:16 | INFO | rag_pipeline:query:126 | Processing query: role=patient, user_id=patient_001, query=I've been feeling really sad and hopeless lately. ...
+2026-06-17 09:08:16 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I've been feeling really sad and hopeless lately. What can help?
+2026-06-17 09:08:16 | INFO | retriever:build_index:30 | BM25 index built with 64 documents
+2026-06-17 09:08:16 | INFO | retriever:retrieve:119 | Patient retrieval: 10 fused results
+2026-06-17 09:08:17 | INFO | reranker:rerank:87 | Lightweight reranked 10 -> 5 results
+2026-06-17 09:09:19 | INFO | rag_pipeline:query:126 | Processing query: role=patient, user_id=patient_001, query=I can't sleep and have no appetite. Is this normal...
+2026-06-17 09:09:19 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: I can't sleep and have no appetite. Is this normal?
+2026-06-17 09:09:19 | INFO | retriever:retrieve:119 | Patient retrieval: 11 fused results
+2026-06-17 09:09:20 | INFO | reranker:rerank:87 | Lightweight reranked 11 -> 5 results
+2026-06-17 09:09:59 | INFO | rag_pipeline:query:126 | Processing query: role=patient, user_id=patient_001, query=How do I know if I need professional help?...
+2026-06-17 09:09:59 | INFO | retriever:retrieve:99 | Patient retrieval for user patient_001: How do I know if I need professional help?
+2026-06-17 09:09:59 | INFO | retriever:retrieve:119 | Patient retrieval: 9 fused results
+2026-06-17 09:09:59 | INFO | reranker:rerank:87 | Lightweight reranked 9 -> 5 results
+2026-06-17 09:10:53 | INFO | rag_pipeline:query:126 | Processing query: role=clinician, user_id=clinician_001, query=What are the DSM-5 criteria for Major Depressive D...
+2026-06-17 09:10:53 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: What are the DSM-5 criteria for Major Depressive Disorder?
+2026-06-17 09:10:53 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_medcpt
+2026-06-17 09:10:53 | INFO | store:_load_or_create:57 | Loaded 48 vectors from curated_kb_medcpt
+2026-06-17 09:10:54 | INFO | retriever:retrieve:166 | Clinician retrieval: 6 results after KG expansion
+2026-06-17 09:10:54 | INFO | reranker:rerank:87 | Lightweight reranked 6 -> 5 results
+2026-06-17 09:11:58 | INFO | rag_pipeline:query:126 | Processing query: role=clinician, user_id=clinician_001, query=First-line treatment options for moderate MDD with...
+2026-06-17 09:11:58 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: First-line treatment options for moderate MDD with comorbid anxiety?
+2026-06-17 09:11:58 | INFO | retriever:retrieve:166 | Clinician retrieval: 9 results after KG expansion
+2026-06-17 09:11:58 | INFO | reranker:rerank:87 | Lightweight reranked 9 -> 5 results
+2026-06-17 09:12:49 | INFO | rag_pipeline:query:126 | Processing query: role=clinician, user_id=clinician_001, query=CBT protocol for depression - key components and s...
+2026-06-17 09:12:49 | INFO | retriever:retrieve:144 | Clinician retrieval for clinician clinician_001: CBT protocol for depression - key components and session structure?
+2026-06-17 09:12:49 | INFO | retriever:retrieve:166 | Clinician retrieval: 10 results after KG expansion
+2026-06-17 09:12:50 | INFO | reranker:rerank:87 | Lightweight reranked 10 -> 5 results
+2026-06-17 09:14:00 | INFO | main:main:210 | RAG System demo complete
