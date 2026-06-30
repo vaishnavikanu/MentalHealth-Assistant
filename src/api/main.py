@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from typing import Optional
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.pipeline.rag_pipeline import RAGPipeline
@@ -8,6 +9,17 @@ from src.utils.config import config
 from src.utils.logging import setup_logging
 
 from .routes import router, set_pipeline
+
+from app.database import engine
+from app.models import Base
+from app.routers.auth import router as auth_router
+from app.routers.chat import router as chat_router
+from app.routers.history import router as history_router
+from app.routers.moods import router as mood_router
+from app.routers.journals import router as journal_router
+from app.routers.settings_routes import router as settings_router
+from app.routers.upload import router as upload_router
+
 
 
 #
@@ -36,11 +48,13 @@ async def lifespan(app: FastAPI):
     pipeline = RAGPipeline()
 
     pipeline.build_indexes()
-    #
-    # Load demo data
-    #
-    pipeline.ingest_user_data("patient_001")
-    pipeline.ingest_clinician_data("clinician_001")
+    # #
+    # # Load demo data
+    # #
+    # pipeline.ingest_user_data("patient_001")
+    # pipeline.ingest_clinician_data("clinician_001")
+
+    Base.metadata.create_all(bind=engine)
 
     #
     # Register pipeline so routes can access it
@@ -60,6 +74,8 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+app.mount("/uploads", StaticFiles(directory="app/uploads"), name="uploads")
 
 @app.get("/")
 def root():
@@ -83,3 +99,10 @@ app.add_middleware(
 )
 
 app.include_router(router)
+app.include_router(auth_router)
+app.include_router(chat_router)
+app.include_router(history_router)
+app.include_router(mood_router)
+app.include_router(journal_router)
+app.include_router(settings_router)
+app.include_router(upload_router)
