@@ -50,4 +50,8 @@ class AttachmentResponse(BaseModel):
     file_path: str
     file_type: str
 
+class SuggestionCreate(BaseModel):
+    patient_id: int
+    doctor_id: int
+    suggestion: str
 

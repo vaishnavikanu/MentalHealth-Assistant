@@ -106,3 +106,25 @@ class Attachment(Base):
     file_path = Column(String)
 
     file_type = Column(String)
+    
+    
+class DoctorSuggestion(Base):
+
+    __tablename__ = "doctor_suggestions"
+    id = Column(Integer, primary_key=True)
+    patient_id = Column(
+        Integer,
+        ForeignKey("users.id")
+    )
+    doctor_id = Column(
+        Integer,
+        ForeignKey("users.id")
+    )
+    suggestion = Column(Text)
+
+    created_at = Column(
+        DateTime,
+        default=lambda:
+            datetime.utcnow() +
+            timedelta(hours=5, minutes=30)
+    )    

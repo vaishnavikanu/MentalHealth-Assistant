@@ -19,6 +19,7 @@ from app.routers.moods import router as mood_router
 from app.routers.journals import router as journal_router
 from app.routers.settings_routes import router as settings_router
 from app.routers.upload import router as upload_router
+from app.routers.suggestions import router as suggestions_router
 
 
 
@@ -106,3 +107,4 @@ app.include_router(mood_router)
 app.include_router(journal_router)
 app.include_router(settings_router)
 app.include_router(upload_router)
+app.include_router(suggestions_router)

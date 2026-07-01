@@ -11,7 +11,7 @@ from fastapi import HTTPException
 router = APIRouter()
 class AttachmentUpdate(BaseModel):
     message_id: int
-UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER = os.path.join("app", "uploads")
 
 os.makedirs(
     UPLOAD_FOLDER,
@@ -25,13 +25,13 @@ async def upload_file(
     db: Session = Depends(get_db)
 ):
 
-    file_path = os.path.join(
+    save_path = os.path.join(
         UPLOAD_FOLDER,
         file.filename
     )
 
     with open(
-        file_path,
+        save_path,
         "wb"
     ) as buffer:
 
@@ -46,7 +46,7 @@ async def upload_file(
 
         filename=file.filename,
 
-        file_path=file_path,
+        file_path=f"uploads/{file.filename}",
 
         file_type=file.content_type
 
