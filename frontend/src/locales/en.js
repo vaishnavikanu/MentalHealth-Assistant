@@ -81,11 +81,10 @@ privacyPolicy: "Privacy Policy",
 termsConditions: "Terms & Conditions",
 
 privacyText:
-  "Your journals, moods and emotional data are stored securely and are never shared with third parties.",
+  "Your privacy is important to us. MindBridge securely stores your journals, mood records, and conversations. Your personal information is never sold or shared with third parties without your consent, except where required by law.",
 
 termsText:
-  "Health Buddy provides emotional wellness support and is not a replacement for professional medical advice.",
-
+  "MindBridge provides AI-powered emotional wellness support and self-care tools for informational and wellness purposes only. It is not a substitute for professional medical, psychological, or psychiatric advice, diagnosis, or treatment. If you are experiencing a mental health emergency, please seek immediate assistance from a qualified healthcare professional or your local emergency services.",
 saved: "Settings saved successfully!",
 
 chatCleared: "Chat history cleared!",
