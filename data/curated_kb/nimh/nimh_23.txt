@@ -1,0 +1,61 @@
+Developing Tools for Measuring Mental Health Outcomes - National Institute of Mental Health (NIMH)
+Skip to main content
+Official websites use .gov
+A
+.gov
+website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+Lock
+Locked padlock icon
+) or
+https://
+means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Due to current HHS and NIH restructuring, some content on nimh.nih.gov is not being updated regularly. Please refer to
+clinicaltrials.gov
+and
+nih.gov
+for up-to-date information on NIH research.
+Science Updates
+Meetings and Events
+Multimedia
+Innovation Speaker Series
+Share Page
+Menu
+More Science Updates about
+Mental Health Services Research
+Prevention
+Treatments
+Developing Tools for Measuring Mental Health Outcomes
+April 9, 2025
+•
+Research Highlight
+Measures of health care quality are used to understand the impact of interventions when implemented in real-world health care systems and settings. These measures are used to assess the effectiveness of treatments and to understand access to care, care delivery processes, patient perceptions of care, and other factors that can impact patient outcomes and their satisfaction with treatment.
+Measures of health care quality can help patients and their clinicians understand and choose care options that best meet their needs. They can also be used to monitor and improve the delivery of interventions, promoting best practices and enhancing care for everyone.
+The three main types of measures used for assessing the quality of health care are:
+Structural quality measures
+: These measures assess whether the provider or organization has the infrastructure and capacity needed to deliver care to patients.
+Process quality measures:
+These measures assess whether patients receive the care that they should.
+Outcome quality measures:
+These measures
+assess whether the care patients receive improves their health and functioning.
+The use of outcome-focused quality measures is common for many physical health conditions. For example, outcome-focused quality measures for diabetes might measure the number of patients with diabetes who meet targets for blood sugar control after treatment. However, very few outcome-focused quality measures have been developed for mental illnesses.
+What studies are being funded by NIH?
+To help fill this gap, the National Institutes of Health has funded six projects to develop, test, and validate outcome-focused quality measures for mental health. As part of these projects, researchers are required to engage with and submit their measures to regulatory or governing bodies such as the Center for Medicare and Medicaid Services or the Battelle Partnership for Quality Measurement. Endorsement by these regulatory bodies helps facilitate a measure’s implementation and use by health plans, health care payers (such as insurance companies), clinicians, and patients.
+NIH support for these projects is one of the many ways the institute is working to increase the accessibility and availability of evidence-based mental health treatments.
+The six funded projects are:
+Quality Measures to Advance Suicide Prevention and Care Across Health Systems
+Researchers will develop a set of suicide ideation and attempt (fatal and non-fatal) outcome measures. They will also develop measures for suicide risk screening and assessment, safety planning, and specialty follow-up care.
+Measuring What Matters-Patient Centered Outcome Measures of Goal-Directed Care for People with Serious Mental Illness
+Researchers will create person-centered outcome measures of the quality of goal-directed care for people with serious mental illnesses, including schizophrenia and bipolar disorder. In goal-directed care, patients and clinicians work together to create individualized treatment goals based on patients' desired outcomes.
+Personalized Quality of Life Measurement
+Researchers will develop an assessment to compare the quality of life of patients experiencing different physical and mental health conditions. A measure that can be used to assess quality of life broadly across many mental and physical health conditions does not exist, making this an important gap area.
+Development and Testing of a Pediatric Anxiety Outcomes Quality Measure
+Researchers project will develop two complementary pediatric anxiety outcome quality measures. The first will measure whether patients are responding to anxiety treatment, and the second will assess whether patients’ anxiety remitted. The researchers will also determine if anxiety outcomes vary according to social risk factors and other patient characteristics, then determine how best to implement and use the measures for quality improvement.
+Identifying and Addressing Bias in Depression and Anxiety Quality Measures
+Researchers will examine the patient characteristics that lead to lower health care quality scores among populations experiencing mental health disparities. The researchers will then use what they learn to create new outcome-focused measures of depression and anxiety with reduced bias and improved accuracy.
+An Outcome-Focused Measure of Mental Health Care Quality Based on Standardized Patient-Reported Symptoms
+Researchers will develop a new outcome-focused mental health quality measure that can be used across different mental health diagnoses. The measure, which is based on routine symptom reports by patients, will be able to look at outcomes at the provider, clinic, organization, or health plan level, making it useful across different settings and populations.

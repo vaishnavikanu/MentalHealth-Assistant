@@ -1,0 +1,202 @@
+Technology and the Future of Mental Health Treatment - National Institute of Mental Health (NIMH)
+Skip to main content
+Official websites use .gov
+A
+.gov
+website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+Lock
+Locked padlock icon
+) or
+https://
+means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Due to current HHS and NIH restructuring, some content on nimh.nih.gov is not being updated regularly. Please refer to
+clinicaltrials.gov
+and
+nih.gov
+for up-to-date information on NIH research.
+Health Topics
+Statistics
+Brochures and Fact Sheets
+Help for Mental Illnesses
+Clinical Trials
+Share Page
+Menu
+Technology and the Future of Mental Health Treatment
+How is technology used for mental health treatment?
+Technology has opened a new frontier in mental health care and data collection. Mobile devices like cell phones, smartphones, and tablets are giving the public, health care providers, and researchers new ways to access help, monitor progress, and increase understanding of mental well-being.
+Mobile mental health support can be very simple but effective. For example, anyone with a phone or computer can call, text, or chat the
+988 Suicide and Crisis Lifeline
+at any time.
+New technology can also be packaged into an extremely sophisticated app for smartphones or tablets. Such apps might use the device’s built-in sensors to collect information on a user’s typical behavior patterns. Then, if the app detects a change in behavior, it can signal that help is needed before a crisis occurs.
+Some apps are stand-alone programs designed to improve memory or thinking skills. Other apps help people connect to a peer counselor or a health care professional.
+Excitement about the huge range of opportunities technology offers for mental health treatment has led to a burst of development. Thousands of mental health apps are available in iTunes and Android app stores, and the number is growing every year. However, this new technology frontier includes a lot of uncertainty. There is very little industry regulation and very little information on app effectiveness, which can lead people to wonder which apps they should trust.
+Before focusing on the state of the science and where it may lead, it’s important to look at the advantages and disadvantages of expanding mental health treatment and research into a mobile world.
+What are the pros and cons of mental health apps?
+Mental health apps and other technology have a lot of potential, both for people seeking mental health care and mental health professionals providing such services. Some advantages of mobile care technology include the following.
+Convenience
+: Allows treatment to take place anytime and anywhere, such as at home in the middle of the night or on a bus on the way to work, making it ideal for people who have trouble getting to in-person appointments
+Anonymity
+: Lets people receive treatment anonymously and privately from the comfort of their homes
+Introduction to care
+: Acts as a good first step for people who have been reluctant to seek mental health care in the past
+Lower cost
+: Makes care more affordable through apps that are free or cheaper than traditional in-person care
+Greater outreach
+: Helps mental health professionals offer treatment to people in remote areas or to large numbers of people in times of sudden need, like after a natural disaster or traumatic event
+Interest
+: Encourages people to continue therapy by making care more appealing and accessible than traditional in-person treatment
+24-hour service
+: Provides around-the-clock monitoring or intervention support
+Consistency
+: Offers the same treatment program to all people
+Support
+: Complements traditional therapy by extending in-person sessions, reinforcing new skills, and providing support and monitoring
+Data collection
+: Collects information, such as location, movement, phone use, and other data
+Mental health technology offers great opportunities but also raises concerns. Addressing potential problems will be essential to ensuring that new apps provide benefits without causing harm. Although apps are becoming more appealing and user-friendly, we need more information on their effectiveness.
+The following are some limitations of the technology that researchers and developers are trying to answer questions about.
+Effectiveness
+: Is the app supported by scientific evidence showing that it works and works as well as traditional in-person methods?
+Audience
+: Does the app work equally well for all people it is meant to help?
+Privacy
+: How does the app maker guarantee users’ privacy, considering many apps deal with sensitive personal information?
+Guidance
+: How do people determine if an app is effective when no industry-wide standards exist for evaluating quality?
+Regulation
+: Who should regulate mental health technology and the data it generates?
+Overselling
+: Does the app promise more than it delivers and turn people away from using other, more effective therapies?
+What are current trends in app development?
+Research and engineering teams are combining their skills to address a wide range of mental health concerns. For instance, intervention apps may help people quit smoking; manage symptoms of anxiety, depression, eating disorders, post-traumatic stress, or insomnia; and more. Some popular areas of app development include the following.
+Self-management
+Self-management apps involve people putting information into the app to receive feedback. For example, they might use the app to set medication reminders or access tools for managing stress, anxiety, or sleep problems. Some software can use additional equipment to track heart rate, breathing patterns, blood pressure, and so forth to help people monitor their progress and receive feedback.
+Improve thinking skills
+Cognitive remediation apps help people improve their thinking skills. These apps are often designed for people with serious mental illnesses who may have distorted or unhelpful ways of thinking or hold inaccurate beliefs.
+Skill training
+Skill training apps may feel more like games than other mental health apps as they help people learn new coping or thinking skills. These apps might involve watching an educational video about anxiety management or the importance of social support, for example. People then pick new strategies to try and use the app to track how often they practice those new skills.
+Illness management and supported care
+Illness management and supported care apps provide additional support by allowing people to interact with another person. The app may connect people with peer support or send information to a trained health care provider who can offer guidance and therapy options. Researchers are working to learn how much human interaction people need for app-based treatments to be effective.
+Passive symptom tracking
+Symptom tracking apps collect data using the sensors built into smartphones. The sensors might record movement patterns, social interactions (such as the number of texts and phone calls), behavior at different times of day, vocal tone and speed, and more. In the future, apps may be able to analyze these data to determine a person’s real-time state of mind. Such apps may also recognize changes in behavior patterns that signal an episode of mania, depression, or psychosis before it occurs. Although an app may not replace a mental health professional, it can alert caregivers when someone needs additional help. The goal is to create apps that support a range of people, including those with serious mental illnesses.
+Data collection
+Data collection apps gather data without any help from the person using them. Receiving widescale information from many people at the same time can increase researchers’ understanding of mental health and help them develop better interventions.
+Conducting research
+Apps can help conduct research. For example, Dr. Patricia Areán’s pioneering
+BRIGTHEN study
+showed that research via a smartphone app is a reality. The BRIGHTEN study was remarkable because it used technology to both deliver treatment and conduct research. In other words, the research team used technology to recruit, screen, enroll, treat, and assess participants. BRIGHTEN was especially exciting because the study showed that technology can be an efficient way to test promising new treatments, while also highlighting the need to make those treatments engaging.
+If you or someone you know is struggling or having thoughts of suicide, call or text the
+988 Suicide and Crisis Lifeline
+at
+988
+or
+chat at
+988lifeline.org
+. In life-threatening situations, call
+911
+.
+Who creates mental health apps?
+Developing mental health apps and other technology requires a partnership between mental health professionals and software engineers. Researchers have found that interventions are most effective when people like them, are engaged in them, and want to continue using them. Behavioral health apps work best when they combine engineers’ skills for making an app easy to use and entertaining with providers’ skills for providing effective treatment options. Researchers and engineers are developing and testing apps that do everything from manage medications to teach coping skills to predict when someone may need emotional help.
+Who evaluates mental health apps?
+There are no review boards, checklists, or widely accepted rules for evaluating or choosing a mental health app or other technology. Most apps do not have peer-reviewed research to support their claims, and it is unlikely that every mental health app will go through a randomized clinical research trial to test its effectiveness. One reason is that testing is a slow process, and technology evolves quickly. By the time an app has been put through rigorous scientific testing, the original technology may be outdated.
+Currently, there are no national standards for evaluating the effectiveness of the hundreds of available mental health apps. People should be cautious about trusting an app. However, there are a few suggestions for finding an app that may work for you:
+Ask a trusted health care provider for a recommendation. Some larger providers may offer several apps and collect data on their use.
+Check to see if the app offers recommendations for what to do if symptoms get worse or there is a psychiatric emergency. Know how to get help if needed.
+Decide if you want an app that is completely automated versus an app that offers opportunities for contact with a trained professional.
+Search for information on the app developer, including their credentials and experience.
+Beware of misleading logos. The National Institute of Mental Health (NIMH) has not developed and does not endorse any apps. However, some app developers have unlawfully used the NIMH logo to market their products.
+Search the
+PubMed database
+offered by the National Library of Medicine. This resource contains articles on a wide range of research topics, including mental health app development.
+If you cannot find information about a particular app, check to see if the app is based on a treatment that has been tested. For example, research has shown that internet-based cognitive behavior therapy (CBT) is as effective as conventional CBT for disorders that include depression, anxiety, social anxiety disorder, and panic disorder.
+Try it. If you’re interested in an app, test it for a few days and decide if it’s easy to use, holds your attention, and is something you want to continue using. An app is only effective if it keeps you engaged.
+What is NIMH’s role in research on mental health intervention technology?
+NIMH has awarded over 400 grants for technology-enhanced mental health interventions. NIMH staff continue to actively review and evaluate research grants related to mental health technology.
+These grants have focused on many areas, including:
+Feasibility, efficacy, and effectiveness research, such as developing and refining new treatments and interventions
+Technology for addressing a wide range of mental disorders, such as schizophrenia, HIV, depression, anxiety, autism, suicide, eating disorders, and trauma
+Interventions for cognitive issues, illness management, problematic behavior, and health communication
+More accessible and engaging ways to deliver therapies or skill development (for example, interactive formats or game-like approaches) and apps that work on any device
+Incorporating real-time, face-to-face contact or remote counseling (phone or online) with peers and professionals to provide a balance between technology and human touch
+Active and passive mobile assessment and monitoring
+Artificial intelligence (AI) tools and technologies
+A significant portion of NIMH funding for these types of technologies is through the
+NIMH Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Programs
+.
+In addition, NIMH created the National Advisory Mental Health Council workgroup on Opportunities and Challenges of Developing Information Technologies on Behavioral and Social Science Clinical Research to track and guide this rapidly changing area. In 2017, the workgroup released
+a report
+reviewing the opportunities for and challenges of using new information technologies to study human behaviors relevant to the NIMH mission.
+NIMH voiced its interest in this research area in a
+2022 notice of special interest
+. The notice called for research on the utility and validity of digital health and AI tools and technologies in epidemiological, clinical, and intervention research.
+How can I find a clinical trial on mental health intervention technology?
+Clinical trials are research studies that look at new ways to prevent, detect, or treat diseases and conditions. The goal of a clinical trial is to determine if a new test or treatment works and is safe. Although people may benefit from being part of a clinical trial, they should know that the primary purpose of a clinical trial is to gain new scientific knowledge so that others may be better helped in the future.
+Researchers at NIMH and around the country conduct many studies with patients and healthy volunteers. We have new and better treatment options today because of what clinical trials have uncovered. Be part of tomorrow’s medical breakthroughs. Talk to a health care provider about clinical trials, their benefits and risks, and whether one is right for you.
+To learn more or find a study, visit:
+NIMH’s Clinical Trials webpage
+: Information about participating in clinical trials
+Clinicaltrials.gov: Current Studies on Mental Health Intervention Technology
+: List of clinical trials funded by the National Institutes of Health being conducted across the country
+Where can I learn more about mental health intervention technology?
+Federal resources
+Getting Mental Health Support Virtually
+(NIMH Fact Sheet)
+How Can You Protect and Secure Health Information When Using a Mobile Device?
+(Department of Health and Human Services)
+How To Protect Your Privacy on Apps
+(Federal Trade Commission)
+Device Software Functions Including Mobile Medical Applications
+(U.S. Food and Drug Administration)
+Research
+NIH
+All of Us
+Research Program
+: This big-data initiative aims to recruit one million adult volunteers to share a variety of data, including electronic health records, health and family medical histories, and biological samples, to support research and uncover paths to the delivery of precision medicine.
+The BRAIN
+®
+Initiative
+:
+The Brain Research Through Advancing Innovative Neurotechnologies®
+Initiative, or The BRAIN® Initiative, funds the development of a wide variety of new technologies to help unlock the mysteries of the human brain.
+NIMH SBIR and STTR Funding Opportunities
+: The NIMH SBIR and STTR Programs are among the largest sources of early stage capital for technology commercialization in the United States.
+Digital Global Mental Health Program
+: This program supports research on the development, testing, implementation, and cost-effectiveness of digital mental health technologies that are appropriate for low- and middle-income countries.
+Science news
+Opportunities and Challenges of Developing Information Technologies on Behavioral and Social Science Clinical Research
+(NIMH National Advisory Mental Health Council Report)
+Chatbot Encourages People With Eating Disorders to Seek Care
+(NIMH Research Highlight)
+Driving Innovation in Mental Health Technology Through Small Business Programs
+(NIMH Director Message)
+Mindful Mood Balance Effective for Treating Residual Depressive Symptoms and Suicidal Ideation
+(NIMH Research Highlight)
+Smartphone Data May Not Reliably Predict Depression Risk in Diverse Groups
+(NIMH Research Highlight)
+Understanding the Availability of Mental Telehealth Services
+(NIMH Research Highlight)
+Other resources
+The non-federal resources listed below are included for information purposes only. This is not a comprehensive list, and a resource’s inclusion on the list does not constitute an endorsement by NIMH.
+One Mind PsyberGuide
+: Website run by a nonprofit organization of experts who provide reviews of computer and device-assisted therapies for mental illnesses, focusing on their credibility, user experience, and transparency of privacy practices
+What You Need to Know Before Choosing Online Therapy
+(American Psychological Association)
+Last Reviewed:
+August 2024
+Unless otherwise specified, the information on our website and in our publications is in the public domain and may be reused or copied without permission. However, you may not reuse or copy images. Please
+cite the National Institute of Mental Health
+as the source.
+Read our copyright policy
+to learn more about our guidelines for reusing NIMH content.
+Join A Study
+Studies for Adults
+Studies for Children
+Science Updates
+Developing Tools for Measuring Mental Health Outcomes
+How the Brain Creates New Memories While Maintaining Old Ones
+Predictive Models Show Promise in Preventing Suicide
+More

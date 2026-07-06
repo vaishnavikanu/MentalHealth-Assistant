@@ -1155,3 +1155,251 @@
 2026-06-30 15:27:02 | INFO | retriever:retrieve:99 | Patient retrieval for user 2: I think I'm depressed, what should I do?
 2026-06-30 15:27:02 | INFO | retriever:retrieve:119 | Patient retrieval: 2 fused results
 2026-06-30 15:27:03 | INFO | reranker:rerank:63 | Reranked 2 -> 2 results
+2026-07-01 20:47:21 | INFO | logging:setup_logging:27 | Logging configured
+2026-07-01 20:47:21 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-07-01 20:47:21 | INFO | main:main:170 | Starting RAG System
+2026-07-01 20:47:21 | INFO | embedder:_load_model:30 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-01 20:47:34 | INFO | embedder:_load_model:34 | SBERT model loaded successfully
+2026-07-01 20:47:34 | INFO | embedder:_load_model:60 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-07-01 20:47:37 | INFO | embedder:_load_model:65 | MedCPT model loaded successfully
+2026-07-01 20:47:37 | INFO | reranker:_load_model:30 | Loading reranker model: BAAI/bge-reranker-base
+2026-07-01 20:47:46 | INFO | reranker:_load_model:35 | Reranker model loaded successfully
+2026-07-01 20:47:56 | INFO | graph_store:load:60 | Loaded graph 'global' (4 nodes, 12 edges)
+2026-07-01 20:47:56 | INFO | rag_pipeline:__init__:51 | Using reranker: CrossEncoderReranker
+2026-07-01 20:47:56 | INFO | rag_pipeline:initialize:61 | Initializing RAG pipeline...
+2026-07-01 20:47:56 | INFO | rag_pipeline:build_indexes:83 | Building all indexes...
+2026-07-01 20:47:56 | INFO | curated_kb:ingest:15 | Starting curated KB ingestion from data\curated_kb
+2026-07-01 20:47:56 | INFO | curated_kb:ingest:19 | Found 2 PDF files
+2026-07-01 20:47:56 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-07-01 20:47:56 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-07-01 20:47:56 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-07-01 20:47:56 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-07-01 20:47:56 | INFO | curated_kb:ingest:33 | Curated KB ingestion complete: 4 documents
+2026-07-01 20:47:56 | INFO | chunker:chunk_documents:124 | Total chunks created: 31
+2026-07-01 20:47:56 | INFO | graph_builder:build_from_chunks:30 | Building graph from 31 chunks...
+2026-07-01 20:47:57 | INFO | graph_store:save:46 | Saved graph 'global' (4 nodes, 16 edges)
+2026-07-01 20:47:57 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-01 20:47:57 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_sbert
+2026-07-01 20:47:57 | INFO | store:_load_or_create:57 | Loaded 352 vectors from curated_kb_sbert
+2026-07-01 20:47:57 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-07-01 20:47:57 | INFO | store:_save:116 | Saved curated_kb_sbert: 368 vectors
+2026-07-01 20:47:57 | INFO | rag_pipeline:build_indexes:134 | Index building complete in 1.20s
+2026-07-01 20:47:57 | INFO | rag_pipeline:ingest_user_data:137 | Ingesting data for user: patient_001
+2026-07-01 20:47:57 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-07-01 20:47:57 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-07-01 20:47:57 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-07-01 20:47:57 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-07-01 20:47:57 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-07-01 20:47:57 | INFO | graph_store:load:60 | Loaded graph 'patient_patient_001' (0 nodes, 0 edges)
+2026-07-01 20:47:57 | INFO | graph_builder:build_from_chunks:30 | Building graph from 2 chunks...
+2026-07-01 20:47:57 | INFO | graph_store:save:46 | Saved graph 'patient_patient_001' (0 nodes, 0 edges)
+2026-07-01 20:47:57 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-01 20:47:57 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-07-01 20:47:58 | INFO | store:_load_or_create:57 | Loaded 23 vectors from user_patient_001_private
+2026-07-01 20:47:58 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-07-01 20:47:58 | INFO | store:_save:116 | Saved user_patient_001_private: 24 vectors
+2026-07-01 20:47:58 | INFO | rag_pipeline:ingest_clinician_data:162 | Ingesting data for clinician: clinician_001
+2026-07-01 20:47:58 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-07-01 20:47:58 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-07-01 20:47:58 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-07-01 20:47:58 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-07-01 20:47:58 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-07-01 20:47:58 | INFO | graph_store:load:60 | Loaded graph 'clinician_clinician_001' (7 nodes, 84 edges)
+2026-07-01 20:47:58 | INFO | graph_builder:build_from_chunks:30 | Building graph from 4 chunks...
+2026-07-01 20:47:58 | INFO | graph_store:save:46 | Saved graph 'clinician_clinician_001' (7 nodes, 126 edges)
+2026-07-01 20:47:58 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-01 20:47:59 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-07-01 20:47:59 | INFO | store:_load_or_create:57 | Loaded 44 vectors from clinician_clinician_001_private
+2026-07-01 20:47:59 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-07-01 20:47:59 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 46 vectors
+2026-07-01 20:47:59 | INFO | rag_pipeline:initialize:72 | Pipeline initialization complete.
+2026-07-02 21:18:35 | INFO | rag_pipeline:query:191 | Processing query: role=patient, user_id=2, query=hi...
+2026-07-02 21:18:35 | INFO | rag_pipeline:query:225 | Expanded Query: hi
+2026-07-02 21:18:35 | INFO | retriever:retrieve:99 | Patient retrieval for user 2: hi
+2026-07-02 21:18:35 | INFO | retriever:retrieve:119 | Patient retrieval: 1 fused results
+2026-07-02 21:18:36 | INFO | reranker:rerank:63 | Reranked 1 -> 1 results
+2026-07-03 20:10:43 | INFO | rag_pipeline:query:191 | Processing query: role=patient, user_id=2, query=What are ways to cope with emotional regulation?...
+2026-07-03 20:10:43 | INFO | rag_pipeline:query:225 | Expanded Query: What are ways to cope with emotional regulation?
+2026-07-03 20:10:43 | INFO | retriever:retrieve:99 | Patient retrieval for user 2: What are ways to cope with emotional regulation?
+2026-07-03 20:10:43 | INFO | retriever:retrieve:119 | Patient retrieval: 2 fused results
+2026-07-03 20:10:44 | INFO | reranker:rerank:63 | Reranked 2 -> 2 results
+2026-07-04 02:50:45 | INFO | logging:setup_logging:27 | Logging configured
+2026-07-04 02:50:45 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-07-04 02:50:45 | INFO | ingest:main:15 | Starting data ingestion
+2026-07-04 02:55:39 | INFO | logging:setup_logging:27 | Logging configured
+2026-07-04 02:55:39 | INFO | config:load:22 | Configuration loaded from configs/config.yaml
+2026-07-04 02:55:39 | INFO | ingest:main:15 | Starting data ingestion
+2026-07-04 02:55:39 | INFO | embedder:_load_model:30 | Loading SBERT model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-04 02:55:50 | INFO | embedder:_load_model:34 | SBERT model loaded successfully
+2026-07-04 02:55:50 | INFO | embedder:_load_model:60 | Loading MedCPT model: ncbi/MedCPT-Article-Encoder
+2026-07-04 02:55:52 | INFO | embedder:_load_model:65 | MedCPT model loaded successfully
+2026-07-04 02:55:52 | INFO | reranker:_load_model:30 | Loading reranker model: BAAI/bge-reranker-base
+2026-07-04 02:56:01 | INFO | reranker:_load_model:35 | Reranker model loaded successfully
+2026-07-04 02:56:09 | INFO | rag_pipeline:__init__:51 | Using reranker: CrossEncoderReranker
+2026-07-04 02:56:09 | INFO | rag_pipeline:build_indexes:83 | Building all indexes...
+2026-07-04 02:56:09 | INFO | curated_kb:ingest:21 | Starting curated KB ingestion from data\curated_kb
+2026-07-04 02:56:09 | INFO | curated_kb:ingest:28 | Found 2 PDFs and 119 text files
+2026-07-04 02:56:09 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-07-04 02:56:09 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-distress-tolerance-skills-standard-english.pdf
+2026-07-04 02:56:09 | INFO | base:parse:27 | Parsing with Docling-style parser: data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-07-04 02:56:09 | INFO | base:parse:48 | Extracted 2 pages from data\curated_kb\dbt-emotion-regulation-skills-standard-english.pdf
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\dsm5_depression.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_0.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_1.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_10.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_11.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_12.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_13.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_14.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_15.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_16.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_17.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_18.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_19.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_2.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_20.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_21.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_22.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_23.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_24.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_25.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_26.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_27.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_28.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_3.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_4.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_5.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_6.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_7.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_8.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\medlineplus\medlineplus_9.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_0.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_1.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_10.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_11.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_2.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_3.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_4.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_5.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_6.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_7.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_8.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nhs\nhs_9.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_0.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_1.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_10.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_11.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_12.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_13.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_14.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_15.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_16.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_17.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_18.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_19.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_2.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_20.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_21.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_22.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_23.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_3.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_4.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_5.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_6.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_7.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_8.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\nimh\nimh_9.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_0.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_1.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_10.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_11.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_12.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_13.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_14.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_15.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_16.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_17.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_18.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_19.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_2.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_20.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_21.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_22.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_23.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_24.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_25.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_26.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_27.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_28.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_29.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_3.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_30.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_31.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_32.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_33.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_34.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_35.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_36.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_37.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_38.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_39.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_4.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_40.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_41.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_42.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_43.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_44.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_45.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_46.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_47.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_48.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_49.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_5.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_50.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_51.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_52.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_6.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_7.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_8.txt
+2026-07-04 02:56:09 | INFO | base:parse:94 | Parsing text file: data\curated_kb\who\who_9.txt
+2026-07-04 02:56:09 | INFO | curated_kb:ingest:62 | Curated KB ingestion complete: 123 documents
+2026-07-04 02:56:09 | INFO | chunker:chunk_documents:124 | Total chunks created: 3304
+2026-07-04 02:56:09 | INFO | graph_builder:build_from_chunks:30 | Building graph from 3304 chunks...
+2026-07-04 02:56:26 | INFO | graph_store:save:43 | Saved graph 'global' (181 nodes, 1599 edges)
+2026-07-04 02:56:26 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-04 02:56:26 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_sbert
+2026-07-04 02:56:26 | INFO | store:_load_or_create:57 | Loaded 432 vectors from curated_kb_sbert
+2026-07-04 02:56:26 | INFO | store:add_chunks:68 | Adding 16 chunks to curated_kb_sbert
+2026-07-04 02:56:26 | INFO | store:_save:116 | Saved curated_kb_sbert: 448 vectors
+2026-07-04 03:00:56 | INFO | store:_load_or_create:52 | Loading existing index: curated_kb_medcpt
+2026-07-04 03:00:56 | INFO | store:_load_or_create:57 | Loaded 5211 vectors from curated_kb_medcpt
+2026-07-04 03:00:56 | INFO | store:add_chunks:68 | Adding 1641 chunks to curated_kb_medcpt
+2026-07-04 03:00:57 | INFO | store:_save:116 | Saved curated_kb_medcpt: 6852 vectors
+2026-07-04 03:00:57 | INFO | rag_pipeline:build_indexes:134 | Index building complete in 287.97s
+2026-07-04 03:00:57 | INFO | rag_pipeline:ingest_user_data:137 | Ingesting data for user: patient_001
+2026-07-04 03:00:57 | INFO | user_content:ingest_user_data:14 | Starting user content ingestion for user: patient_001
+2026-07-04 03:00:57 | INFO | user_content:ingest_user_data:23 | Found 1 text files for user patient_001
+2026-07-04 03:00:57 | INFO | base:parse:94 | Parsing text file: data\user_content\users\patient_001\journal_week1.txt
+2026-07-04 03:00:57 | INFO | user_content:ingest_user_data:35 | User content ingestion complete for patient_001: 1 documents
+2026-07-04 03:00:57 | INFO | chunker:chunk_documents:124 | Total chunks created: 2
+2026-07-04 03:00:57 | INFO | graph_builder:build_from_chunks:30 | Building graph from 2 chunks...
+2026-07-04 03:00:57 | INFO | graph_store:save:43 | Saved graph 'patient_patient_001' (2 nodes, 1 edges)
+2026-07-04 03:00:57 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-04 03:00:57 | INFO | store:_load_or_create:52 | Loading existing index: user_patient_001_private
+2026-07-04 03:00:57 | INFO | store:_load_or_create:57 | Loaded 28 vectors from user_patient_001_private
+2026-07-04 03:00:57 | INFO | store:add_chunks:68 | Adding 1 chunks to user_patient_001_private
+2026-07-04 03:00:57 | INFO | store:_save:116 | Saved user_patient_001_private: 29 vectors
+2026-07-04 03:00:57 | INFO | rag_pipeline:ingest_clinician_data:162 | Ingesting data for clinician: clinician_001
+2026-07-04 03:00:57 | INFO | user_content:ingest_clinician_data:39 | Starting clinician content ingestion for clinician: clinician_001
+2026-07-04 03:00:57 | INFO | user_content:ingest_clinician_data:48 | Found 1 text files for clinician clinician_001
+2026-07-04 03:00:57 | INFO | base:parse:94 | Parsing text file: data\user_content\clinicians\clinician_001\patient_001_intake.txt
+2026-07-04 03:00:57 | INFO | user_content:ingest_clinician_data:60 | Clinician content ingestion complete for clinician_001: 1 documents
+2026-07-04 03:00:57 | INFO | chunker:chunk_documents:124 | Total chunks created: 4
+2026-07-04 03:00:57 | INFO | graph_builder:build_from_chunks:30 | Building graph from 4 chunks...
+2026-07-04 03:00:57 | INFO | graph_store:save:43 | Saved graph 'clinician_clinician_001' (6 nodes, 15 edges)
+2026-07-04 03:00:57 | INFO | graph_builder:build_from_chunks:40 | Graph construction complete.
+2026-07-04 03:00:57 | INFO | store:_load_or_create:52 | Loading existing index: clinician_clinician_001_private
+2026-07-04 03:00:58 | INFO | store:_load_or_create:57 | Loaded 54 vectors from clinician_clinician_001_private
+2026-07-04 03:00:58 | INFO | store:add_chunks:68 | Adding 2 chunks to clinician_clinician_001_private
+2026-07-04 03:00:58 | INFO | store:_save:116 | Saved clinician_clinician_001_private: 56 vectors
+2026-07-04 03:00:58 | INFO | ingest:main:33 | Ingestion complete

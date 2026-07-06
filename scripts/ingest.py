@@ -14,7 +14,7 @@ def main():
 
     logger.info("Starting data ingestion")
 
-    pipeline = RAGPipeline(use_mock_generator=True)
+    pipeline = RAGPipeline(generator_type="ollama")
 
     print("Building curated KB indexes...")
     pipeline.build_indexes()
