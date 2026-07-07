@@ -153,7 +153,7 @@ function Chat({ newChat, darkMode }) {
     setInput("");
     setAttachments([]);
     setIsWaitingForReply(true);
-
+    setTypingText(t("chat.thinking"));
     textareaRef.current?.focus();
 
     try {
@@ -192,28 +192,61 @@ function Chat({ newChat, darkMode }) {
           message_id: messageId,
         });
       }
-      if (!sessionId) {
-        navigate(`/?session=${currentSessionId}`, { replace: true });
-      }
-
+      
      /* BOT RESPONSE FROM RAG */
 
-      const botText = messageResponse.data.bot_reply;
-
-      setMessages((prev) => [
-        ...prev,
-        {
-          sender: "bot",
-          text: botText,
-        },
-      ]);
+      const botText = messageResponse.data.bot_reply || "";
 
       setTypingText("");
 
-      setIsWaitingForReply(false);
+      let currentText = "";
 
-      textareaRef.current?.focus();
-      
+      let index = 0;
+
+      const typingInterval = setInterval(() => {
+
+        currentText += botText.slice(index, index + 3);
+
+        setTypingText(currentText);
+
+        requestAnimationFrame(() => {
+
+          if (chatContainerRef.current) {
+
+            chatContainerRef.current.scrollTop =
+              chatContainerRef.current.scrollHeight;
+
+          }
+
+        });
+
+        index += 3;
+
+        if (index >= botText.length) {
+
+          clearInterval(typingInterval);
+
+          (async () => {
+
+            setTypingText("");
+
+            await loadMessages(currentSessionId);
+
+            if (!sessionId) {
+                navigate(`/?session=${currentSessionId}`, {
+                    replace: true,
+                });
+            }
+
+            setIsWaitingForReply(false);
+
+            textareaRef.current?.focus();
+
+        })();
+
+        }
+
+      }, 20);
     } catch (error) {
       console.log(error);
     }

@@ -531,7 +531,7 @@ function Settings({ darkMode, setDarkMode }) {
             ${darkMode ? "bg-[#374151]" : "bg-gray-100"}
           `}
           >
-            📞 {t("settings.support")}: +91 9876543210
+            📞 {t("settings.support")}: +91 8985048918 
           </div>
         </div>
 
