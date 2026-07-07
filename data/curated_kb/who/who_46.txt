@@ -1,0 +1,73 @@
+Mental Health, Brain Health and Substance Use
+Skip to main content
+Mental Health, Brain Health and Substance Use
+Our work involves mental health promotion and the prevention of mental, neurological and substance use disorders. We support the expansion of access to affordable, quality care for everyone who needs it.
+About us
+Suicide data
+Section navigation
+Data & research
+Suicide data
+Mental Health Atlas
+Global Scale for Early Development
+Globally, more than 720 000 people die by suicide every year. Suicide is a global phenomenon and occurs throughout the lifespan. Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others making a suicide attempt.
+Suicide is a global phenomenon; in fact, 73% of suicides occurred in low- and middle-income countries in 2021. Suicide accounted for 1.1% of all deaths worldwide in 2021, meaning that 1 in every 100 deaths is by suicide.
+1
+1
+WHO Global Health Estimates
+23 May 2025
+Suicide worldwide in 2021: global health estimates
+An estimated 727 000 persons died by suicide in 2021. Suicide was the third leading cause of death among 15-29-year-olds; second for females, third for...
+Download
+Read More
+Suicide estimates
+Estimates on the numbers and rates of suicide stem from the WHO
+Global Health Estimates
+. They provide a comprehensive and comparable assessment of mortality (including suicide)
+and loss of health due to diseases and injuries for countries, regions and the world. The latest WHO Global Health Estimates are for the years 2000–2021.
+Link to
+WHO methods and data sources
+for country-level causes of death 2000-2021.
+Suicide in the UN Sustainable Development Goals (SDGs)
+The
+SDGs
+were
+adopted by the United Nations General Assembly in September 2015 and look to 2030.
+Goal 3 of the SDGs is to “Ensure healthy lives and promote well-being for all at all ages.”
+Target 3.4 is “By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being.”
+Within Target 3.4, suicide rate is an indicator (3.4.2).
+WHO World Health Statistics
+The WHO
+World Health Statistics
+bring together data from the WHO Global Health Estimates on health-related SDG indicators, including suicide rate (SDG indicator 3.4.2).
+Show less
+Show more
+Data quality
+There are several important caveats that need to be considered when evaluating suicide mortality data. Of the WHO 183 Member States for which estimates
+were made for the year 2021, 86 have good-quality (labelled as high and medium quality) vital registration data that can be used directly to estimate suicide rates.
+The estimated suicide rates in the other 97 Member States (which account for about 61% of global suicides) are necessarily based on modelling methods. As might be expected, good-quality vital registration systems are much more likely to be available in high-income countries. The 49 high-income countries with good vital registration data account for 99.6% of all estimated suicides in high-income countries, but the 37 low- and middle-income countries (LMICs) with good vital registration data account for only 16.3% of all estimated suicides in LMICs.
+This problem of poor-quality mortality data is not unique to suicide, but given the sensitivity of suicide – and the illegality of suicidal behaviour in some countries – it is likely that under-reporting and misclassification are greater problems for suicide than for most other causes of death. Suicide registration is a complicated, multilevel procedure that includes medical and legal concerns and involves several responsible authorities that can vary from country to country.
+Suicides are most commonly found misclassified, according to the codes of the 10th edition of the International Classification of Diseases and Related Health Conditions (ICD-10), as “deaths of undetermined intent” (ICD-10 codes Y10-Y34), and also as “accidents” (codes V01-X59), “homicides” (codes X85-Y09) and “unknown cause” (codes R95-R99).
+Show less
+Show more
+Suicide data reported by countries
+Every year, Member States report mortality data from their civil registration and vital statistics systems to WHO. The
+WHO Mortality Database
+is a compilation of mortality data by age, sex and cause of death including suicide.
+Show less
+Show more
+Publications
+13 June 2016
+Practice manual for establishing and maintaining surveillance systems for suicide attempts and self-harm
+This practice manual aims to provide a tool for countries to use in setting up a public health surveillance system for suicide attempts and self-harm cases...
+Download
+Read More
+17 August 2014
+Preventing suicide: A global imperative
+Every 40 seconds a person dies by suicide somewhere in the world. Over 800 000 people die by suicide every year. Yet suicides are preventable. “Preventing...
+Download
+Read More
+1 January 2011
+Preventing suicide: a resource for suicide case registration
+Download
+Read More
+Suicide Prevention health topic

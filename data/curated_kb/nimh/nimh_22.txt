@@ -1,0 +1,61 @@
+Predictive Models Show Promise in Preventing Suicide - National Institute of Mental Health (NIMH)
+Skip to main content
+Official websites use .gov
+A
+.gov
+website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+Lock
+Locked padlock icon
+) or
+https://
+means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Due to current HHS and NIH restructuring, some content on nimh.nih.gov is not being updated regularly. Please refer to
+clinicaltrials.gov
+and
+nih.gov
+for up-to-date information on NIH research.
+Science Updates
+Meetings and Events
+Multimedia
+Innovation Speaker Series
+Share Page
+Menu
+More Science Updates about
+Prevention
+Suicide
+Predictive Models Show Promise in Preventing Suicide
+March 27, 2025
+•
+Research Highlight
+Over
+40% of people who die by suicide
+visit a health care provider in the month before their death, underscoring the critical role of health care settings in suicide prevention. Researchers have been trying to find better ways of quickly and accurately detecting suicide risk in these settings. One tactic that has shown promise is analyzing electronic health records (EHRs) to quickly identify people in need of help.
+In a study funded by the National Institutes of Health,
+Emily Haroz, Ph.D.
+,
+Roy Adams, Ph.D.
+,
+Novalene Alsenay Goklish, D.B.H.
+, and colleagues created new suicide risk prediction models using data in EHRs from the Indian Health Service (IHS). The models were better at identifying those at risk for suicide than currently used screening methods.
+What did the researchers do in the study?
+The researchers analyzed EHR data from over 331,000 visits by more than 16,000 adults to IHS providers between 2017 and 2021. During this period, 324 people attempted suicide, and 37 people died by suicide. Of these, 72% of suicide attempts and 50% of suicide deaths occurred in the 90 days after contact with the health system.
+The researchers created models that incorporated suicide risk factors found in EHRs. They then tested the models to see if they predicted the risk of a suicide attempt or death in the 90 days after an IHS visit better than currently used methods. Currently used methods include suicide screening and considering past history of suicide attempts and recent diagnoses of suicide ideation.
+What did the researchers find?
+The researchers found that both models performed equally well, correctly identifying people who attempted or died by suicide within 90 days of their last healthcare visit 82% of the time. This suggests the test does a good job of distinguishing between those at risk for suicide and those who are not. In contrast, currently used screening methods correctly identified those at risk only 64% of the time, which is only slightly better than chance (50%).
+Why is this study important?
+Suicide is the eleventh cause of death
+overall in the United States, and American Indian and Alaska Native populations have the highest rate of suicide of any racial or ethnic group. The factors that drive suicide risk are varied and complex, making it important to identify the best methods for identifying and preventing suicide risk across different contexts and populations.
+In this study, EHR-based models outperformed existing suicide risk screening methods. These findings suggest that the use of EHR-based models may be an important way to reduce suicide risk in health care settings that serve this highly impacted population.
+Reference
+Adams, R., Haroz, E. E., Rebman, P., Suttle, R., Grosvenor, L., Bajaj, M., Dayal, R. R., Maggio, D., Kettering, C. L., Goklish, N. (2024). Developing a suicide risk model for use in the Indian Health Service.
+npj mental health research
+, 3(1), 47.
+https://doi.org/10.1038/s44184-024-00088-5
+NIH Grants
+Grant MH128518
+,
+Grant MH122357

@@ -1,0 +1,53 @@
+{
+    "mdd": "major depressive disorder",
+    "major depression": "major depressive disorder",
+    "major depressive episode": "major depressive disorder",
+
+    "gad": "generalized anxiety disorder",
+    "generalised anxiety disorder": "generalized anxiety disorder",
+
+    "ptsd": "post traumatic stress disorder",
+    "post-traumatic stress disorder": "post traumatic stress disorder",
+
+    "ocd": "obsessive compulsive disorder",
+
+    "adhd": "attention deficit hyperactivity disorder",
+
+    "cbt": "cognitive behavioral therapy",
+    "cognitive behaviour therapy": "cognitive behavioral therapy",
+
+    "dbt": "dialectical behavior therapy",
+    "dialectical behaviour therapy": "dialectical behavior therapy",
+
+    "act": "acceptance and commitment therapy",
+
+    "ipt": "interpersonal therapy",
+
+    "mbct": "mindfulness based cognitive therapy",
+
+    "ssri": "selective serotonin reuptake inhibitor",
+
+    "snri": "serotonin norepinephrine reuptake inhibitor",
+
+    "tca": "tricyclic antidepressant",
+
+    "maoi": "monoamine oxidase inhibitor",
+
+    "prozac": "fluoxetine",
+    "zoloft": "sertraline",
+    "lexapro": "escitalopram",
+
+    "suicidal thoughts": "suicidal ideation",
+
+    "low mood": "depressed mood",
+
+    "loss of interest": "anhedonia",
+
+    "poor sleep": "sleep disturbance",
+
+    "trouble sleeping": "insomnia",
+
+    "feeling hopeless": "hopelessness",
+
+    "feeling worthless": "worthlessness"
+}

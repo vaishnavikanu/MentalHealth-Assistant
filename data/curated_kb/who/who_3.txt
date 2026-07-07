@@ -1,0 +1,51 @@
+Monitoring and sharing suicide data and statistics
+Skip to main content
+The timely registration and regular monitoring of suicide data form the backbone of any suicide prevention efforts and national suicide prevention strategies. Doing so provides essential information for understanding the scope of the problem so that interventions can be tailored to meet the needs of populations.
+WHO's annual
+World Health Statistics
+report monitors health for the UN Sustainable Development Goals, which include
+suicide estimates
+(3.4.2 as the only indicator of mental health) from the WHO Global Health Estimates. The WHO
+Global Health Estimates
+provide comprehensive and comparable estimates of mortality (including suicide) and morbidity for the world, WHO regions, and countries. The estimates pertaining to suicide are accessible on the WHO
+Global Health Observatory
+.
+The WHO
+Mortality Database
+is a compilation of mortality data as reported annually by Member States from their civil registration and vital statistics systems. These mortality data are used as an input for the WHO Global Health Estimates. Based on the WHO Global Health Estimates, WHO published
+Suicide worldwide in 2021: Global Health Estimates
+to provide essential information on suicide across countries and WHO regions.
+Prior to this, WHO published its first world suicide report
+Preventing suicide: a global imperative
+to increase the awareness of the scale and public health significance of suicide and suicide attempts worldwide.
+Quality of suicide mortality data
+varies globally. Of the 183 WHO Member States for which estimates were made for the year 2021, 86 have good-quality (labelled as high and medium quality) vital registration data that can be used directly to estimate suicide rates.
+Publications
+23 May 2025
+Suicide worldwide in 2021: global health estimates
+An estimated 727 000 persons died by suicide in 2021. Suicide was the third leading cause of death among 15-29-year-olds; second for females, third for...
+Download
+Read More
+15 May 2025
+World health statistics 2025: monitoring health for the SDGs, sustainable development goals
+The World health statistics report is the annual compilation of health and health-related indicators, which has been published by the World Health Organization...
+Download
+Read More
+19 May 2023
+World health statistics 2023: monitoring health for the SDGs, sustainable development goals
+The World health statistics report is the annual compilation of health and health-related indicators which has been published by the World Health Organization...
+Download
+Read More
+16 June 2021
+Suicide worldwide in 2019
+More than 700 000 persons die by suicide every year globally. Suicide is the fourth leading cause of death among 15-29 year olds. The reduction of suicide...
+Download
+Read More
+Multimedia
+Infographic
+Data quality of suicide estimates, 2021
+Related Health topics
+Conditions
+Depression
+Health and wellbeing
+Mental health

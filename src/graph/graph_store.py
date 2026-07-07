@@ -27,10 +27,7 @@ class GraphStore:
             f"{graph_name}.pkl",
         )
 
-        #
-        # Directed graph with multiple edge support.
-        #
-        self.graph = nx.MultiDiGraph()
+        self.graph = nx.DiGraph()
 
         self.load()
 
@@ -122,19 +119,33 @@ class GraphStore:
 
         self,
 
-        source: str,
+        source,
 
-        target: str,
+        target,
 
-        relation: str = "related_to",
+        relation="related_to",
 
-        document_id: Optional[str] = None,
+        document_id=None,
 
-        chunk_id: Optional[str] = None,
+        chunk_id=None,
 
-        weight: float = 1.0,
+        weight=1.0,
 
     ):
+
+        if self.graph.has_edge(source, target):
+
+            edge = self.graph[source][target]
+
+            edge["weight"] += weight
+
+            edge["frequency"] += 1
+
+            edge["document_ids"].add(document_id)
+
+            edge["chunk_ids"].add(chunk_id)
+
+            return
 
         self.graph.add_edge(
 
@@ -144,14 +155,19 @@ class GraphStore:
 
             relation=relation,
 
-            document_id=document_id,
-
-            chunk_id=chunk_id,
-
             weight=weight,
 
-        )
+            frequency=1,
 
+            document_ids=set(
+                [] if document_id is None else [document_id]
+            ),
+
+            chunk_ids=set(
+                [] if chunk_id is None else [chunk_id]
+            ),
+
+        )
     ##########################################################
     # Lookup
     ##########################################################

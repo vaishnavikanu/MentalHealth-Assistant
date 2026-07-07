@@ -1,69 +1,63 @@
+import json
 import re
-from typing import Dict, List, Set
+from pathlib import Path
+from typing import Dict, List
 
 
 class EntityExtractor:
 
     def __init__(self):
 
-        self.entities = {
+        ontology_path = (
+            Path(__file__)
+            .resolve()
+            .parents[2]
+            / "resources"
+            / "medical_entities.json"
+        )
 
-            #
-            # Disorders
-            #
+        aliases_path = (
+            Path(__file__)
+            .resolve()
+            .parents[2]
+            / "resources"
+            / "aliases.json"
+        )
 
-            "depression": "disorder",
-            "major depressive disorder": "disorder",
-            "mdd": "disorder",
-            "anxiety": "disorder",
-            "generalized anxiety disorder": "disorder",
-            "gad": "disorder",
-            "ptsd": "disorder",
-            "ocd": "disorder",
-            "panic disorder": "disorder",
-            "bipolar disorder": "disorder",
-            "adhd": "disorder",
-            "insomnia": "symptom",
+        with open(
+            aliases_path,
+            "r",
+            encoding="utf-8",
+        ) as f:
+            
+            self.aliases = json.load(f)
 
-            #
-            # Therapies
-            #
+        with open(
+            ontology_path,
+            "r",
+            encoding="utf-8",
+        ) as f:
 
-            "cbt": "therapy",
-            "cognitive behavioral therapy": "therapy",
-            "dbt": "therapy",
-            "dialectical behavior therapy": "therapy",
-            "behavioral activation": "therapy",
-            "mindfulness": "therapy",
+            ontology = json.load(f)
 
-            #
-            # Medication
-            #
+        self.entities = {}
 
-            "ssri": "medication",
-            "snri": "medication",
-            "sertraline": "medication",
-            "fluoxetine": "medication",
-            "escitalopram": "medication",
+        for category, terms in ontology.items():
 
-            #
-            # Assessments
-            #
+            for term in terms:
 
-            "phq-9": "assessment",
-            "gad-7": "assessment",
+                self.entities[
+                    term.lower()
+                ] = category
 
-            #
-            # Symptoms
-            #
+        self.patterns = {}
 
-            "fatigue": "symptom",
-            "hopelessness": "symptom",
-            "worthlessness": "symptom",
-            "sleep": "symptom",
-            "sadness": "symptom",
-            "suicidal ideation": "symptom",
-        }
+        for entity in self.entities:
+
+            self.patterns[entity] = re.compile(
+                r"\b" + re.escape(entity) + r"\b",
+                re.IGNORECASE,
+            )
 
     def extract(
         self,
@@ -73,19 +67,32 @@ class EntityExtractor:
         text = text.lower()
 
         found = []
+        seen = set()
 
-        for entity, entity_type in self.entities.items():
+        for entity in sorted(
+            self.entities.keys(),
+            key=len,
+            reverse=True,
+        ):
 
-            pattern = r"\b" + re.escape(entity) + r"\b"
+            entity_type = self.entities[entity]
 
-            if re.search(pattern, text):
+            if self.patterns[entity].search(text):
+                canonical = self.aliases.get(
+                    entity,
+                    entity,
+                )
 
-                found.append({
+                if canonical in seen:
+                    continue
 
-                    "entity": entity,
+                seen.add(canonical)
 
-                    "type": entity_type,
-
-                })
+                found.append(
+                    {
+                        "entity": canonical,
+                        "type": entity_type,
+                    }
+                )
 
         return found

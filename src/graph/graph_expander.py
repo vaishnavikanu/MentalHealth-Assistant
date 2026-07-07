@@ -1,4 +1,4 @@
-from typing import List
+from collections import defaultdict
 
 
 class GraphExpander:
@@ -7,20 +7,85 @@ class GraphExpander:
         self,
         graphs,
         entities,
-    ) -> List[str]:
+        top_k=10,
+    ):
 
-        expanded = set()
+        scores = defaultdict(float)
+
+        #
+        # Original entities always stay.
+        #
+        for entity in entities:
+            scores[entity] += 100
 
         for graph in graphs:
 
             for entity in entities:
 
-                expanded.add(entity)
+                if not graph.has_node(entity):
+                    continue
 
-                neighbors = graph.get_neighbors(entity)
+                #
+                # Look at every outgoing edge.
+                #
+                for neighbor in graph.get_neighbors(entity):
 
-                for n in neighbors:
+                    node = graph.get_node(neighbor)
 
-                    expanded.add(n)
+                    if node is None:
+                        continue
 
-        return list(expanded)
+                    score = 0
+
+                    #
+                    # Frequently occurring nodes
+                    #
+                    score += node.get(
+                        "frequency",
+                        1,
+                    )
+
+                    #
+                    # Entity type bonus
+                    #
+                    entity_type = node.get(
+                        "entity_type",
+                        "general",
+                    )
+
+                    priority = {
+
+                        "disorder": 5,
+                        "therapy": 5,
+                        "medication": 5,
+                        "assessment": 4,
+                        "symptom": 3,
+                        "lifestyle": 2,
+                        "general": 1,
+
+                    }
+
+                    score += priority.get(
+                        entity_type,
+                        1,
+                    )
+
+                    scores[neighbor] += score
+
+        ranked = sorted(
+
+            scores.items(),
+
+            key=lambda x: x[1],
+
+            reverse=True,
+
+        )
+
+        return [
+
+            entity
+
+            for entity, _ in ranked[:top_k]
+
+        ]
