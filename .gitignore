@@ -1,2 +1,11 @@
 /.venv
-/__pycache__
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+
+# Runtime artifacts and derived indexes
+logs/
+graphs/*.pkl
+indexes/*.index
+indexes/*_metadata.pkl
