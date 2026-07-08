@@ -45,26 +45,6 @@ def get_journals(
 
     return journals
 
-@router.put("/journal/{journal_id}")
-def update_journal(
-    journal_id: int,
-    journal_data: JournalCreate,
-    db: Session = Depends(get_db)
-):
-    journal = db.query(Journal).filter(
-        Journal.id == journal_id
-    ).first()
-
-    if not journal:
-        return {"message": "Journal not found"}
-
-    journal.title = journal_data.title
-    journal.content = journal_data.content
-
-    db.commit()
-
-    return {"message": "Journal updated successfully"}
-
 @router.delete("/journal/{journal_id}")
 def delete_journal(
     journal_id: int,

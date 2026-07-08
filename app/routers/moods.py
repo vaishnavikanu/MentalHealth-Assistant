@@ -45,26 +45,6 @@ def get_moods(
 
     return moods
 
-@router.put("/mood/{mood_id}")
-def update_mood(
-    mood_id: int,
-    mood_data: MoodCreate,
-    db: Session = Depends(get_db)
-):
-    mood = db.query(Mood).filter(
-        Mood.id == mood_id
-    ).first()
-
-    if not mood:
-        return {"message": "Mood not found"}
-
-    mood.mood = mood_data.mood
-    mood.note = mood_data.note
-
-    db.commit()
-
-    return {"message": "Mood updated successfully"}
-
 @router.delete("/mood/{mood_id}")
 def delete_mood(
     mood_id: int,
