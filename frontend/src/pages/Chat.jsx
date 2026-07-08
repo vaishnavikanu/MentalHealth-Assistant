@@ -91,15 +91,19 @@ function Chat({ newChat, darkMode }) {
 
   //TO LOAD OLD CHAT MESSAGES
   useEffect(() => {
-    if (urlSessionId) {
-      loadMessages(urlSessionId);
-    } else {
-      setMessages(defaultMessages);
-    }
 
-    setTimeout(() => {
-      textareaRef.current?.focus();
-    }, 100);
+      if (urlSessionId && urlSessionId !== sessionId) {
+          loadMessages(urlSessionId);
+      }
+
+      if (!urlSessionId) {
+          setMessages([]);
+      }
+
+      setTimeout(() => {
+          textareaRef.current?.focus();
+      }, 100);
+
   }, [urlSessionId]);
 
   const loadMessages = async (session_id) => {
@@ -107,11 +111,11 @@ function Chat({ newChat, darkMode }) {
       const response = await API.get(`/messages/${session_id}`);
 
       const formattedMessages = response.data.map((msg) => ({
-        sender: msg.sender,
-        text: msg.message,
-        attachments: msg.attachments || [],
+          id: msg.id,
+          sender: msg.sender,
+          text: msg.message,
+          attachments: msg.attachments || [],
       }));
-
       isInitialLoad.current = true;
       setMessages(formattedMessages);
 
@@ -226,23 +230,27 @@ function Chat({ newChat, darkMode }) {
 
           clearInterval(typingInterval);
 
-          (async () => {
+          setTypingText("");
 
-            setTypingText("");
+          setMessages((prev) => [
+            ...prev,
+            {
+              id: messageResponse.data.bot_message_id,
+              sender: "bot",
+              text: botText,
+              attachments: [],
+            },
+          ]);
 
-            await loadMessages(currentSessionId);
+          if (!sessionId) {
+            navigate(`/?session=${currentSessionId}`, {
+              replace: true,
+            });
+          }
 
-            if (!sessionId) {
-                navigate(`/?session=${currentSessionId}`, {
-                    replace: true,
-                });
-            }
+          setIsWaitingForReply(false);
 
-            setIsWaitingForReply(false);
-
-            textareaRef.current?.focus();
-
-        })();
+          textareaRef.current?.focus();
 
         }
 
@@ -412,9 +420,9 @@ function Chat({ newChat, darkMode }) {
               </div>
             )}
 
-            {messages.map((msg, index) => (
+            {messages.map((msg) => (
               <div
-                key={index}
+                key={msg.id}
                 className={`
                 max-w-[70%]
                 px-6

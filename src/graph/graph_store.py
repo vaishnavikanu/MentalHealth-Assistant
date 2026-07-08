@@ -116,57 +116,46 @@ class GraphStore:
     ##########################################################
 
     def add_edge(
-
         self,
-
         source,
-
         target,
-
         relation="related_to",
-
         document_id=None,
-
         chunk_id=None,
-
         weight=1.0,
-
     ):
 
         if self.graph.has_edge(source, target):
 
-            edge = self.graph[source][target]
+            if self.graph.is_multigraph():
+                key = next(iter(self.graph[source][target]))
+                edge = self.graph.edges[source, target, key]
+            else:
+                edge = self.graph.edges[source, target]
 
-            edge["weight"] += weight
+            edge["weight"] = edge.get("weight", 0) + weight
+            edge["frequency"] = edge.get("frequency", 0) + 1
 
-            edge["frequency"] += 1
+            if document_id is not None:
+                edge.setdefault("document_ids", set()).add(document_id)
 
-            edge["document_ids"].add(document_id)
-
-            edge["chunk_ids"].add(chunk_id)
+            if chunk_id is not None:
+                edge.setdefault("chunk_ids", set()).add(chunk_id)
 
             return
 
         self.graph.add_edge(
-
             source,
-
             target,
-
             relation=relation,
-
             weight=weight,
-
             frequency=1,
-
             document_ids=set(
                 [] if document_id is None else [document_id]
             ),
-
             chunk_ids=set(
                 [] if chunk_id is None else [chunk_id]
             ),
-
         )
     ##########################################################
     # Lookup

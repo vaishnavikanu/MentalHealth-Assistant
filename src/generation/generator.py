@@ -175,7 +175,12 @@ class OllamaGenerator(BaseGenerator):
             json={
                 "model": self.model,
                 "prompt": prompt,
-                "stream": False
+                "stream": False,
+                "options": {
+                    "num_predict": 512,
+                    "temperature": 0.7,
+                    "top_p": 0.9
+                }
             }
         )
 

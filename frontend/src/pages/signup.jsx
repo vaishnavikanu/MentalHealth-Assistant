@@ -105,8 +105,10 @@ function Signup({ darkMode }) {
         ${darkMode ? "bg-[#111827]" : "bg-[#f5f5f7]"}
       `}
     >
+      
       <form
         onSubmit={handleSubmit}
+        
         className={`
           w-full
           max-w-md
@@ -116,6 +118,22 @@ function Signup({ darkMode }) {
           ${darkMode ? "bg-[#1f2937] text-white" : "bg-white text-black"}
         `}
       >
+        <h1
+          className={`
+            text-center
+            text-5xl
+            font-extrabold
+            mb-6
+            tracking-tight
+            ${
+              darkMode
+                ? "text-[#7FD3BE]"
+                : "text-[#2D6658]"
+            }
+          `}
+        >
+          MindBridge
+        </h1>
         <div className="mb-5 relative">
           <button
             type="button"

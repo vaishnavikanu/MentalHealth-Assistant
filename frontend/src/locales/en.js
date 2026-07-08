@@ -132,8 +132,8 @@ chat: {
    wellnessStreak: "🔥 Wellness Streak",
 keepGoing: "Keep taking care of yourself 💚",
 days:"Days"  ,
-doctorWelcomeTitle: "Welcome, Dr.",
-doctorWelcomeSubtitle: "How may I assist you today? View patient records, monitor mood trends, and provide support recommendations.",
+doctorWelcomeTitle: "Welcome, ",
+doctorWelcomeSubtitle: "How may I assist you today?  ",
 suggestion1: "I'm feeling anxious",
 suggestion2: "Help me understand my emotions",
 suggestion3: "Guide me through a breathing exercise"
@@ -310,8 +310,8 @@ history: {
   journalHistory: "Journal History",
   moodTracker: "Mood Tracker",
 
-  continueChat:
-    "Click to continue chat",
+  continueChat: "Click to continue chat",
+  readChat: "Click to read conversation" ,
 
   noChatHistory:
     "No chat history available.",

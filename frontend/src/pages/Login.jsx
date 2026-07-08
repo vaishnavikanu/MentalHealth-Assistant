@@ -112,6 +112,22 @@ function Login({ darkMode }) {
           ${darkMode ? "bg-[#1f2937] text-white" : "bg-white text-black"}
         `}
       >
+        <h1
+          className={`
+            text-center
+            text-5xl
+            font-extrabold
+            mb-6
+            tracking-tight
+            ${
+              darkMode
+                ? "text-[#7FD3BE]"
+                : "text-[#2D6658]"
+            }
+          `}
+        >
+          MindBridge
+        </h1>
         <div className="mb-5 relative">
           <button
             type="button"

@@ -522,7 +522,7 @@ function PatientHistory({ darkMode }) {
                       <div className="flex justify-between items-start">
                         <div>
                           <h3 className="font-semibold mb-2 text-[#5ea493]">
-                            Dr. {item.doctor_name}
+                             {item.doctor_name}
                           </h3>
 
                           <p>{item.suggestion}</p>

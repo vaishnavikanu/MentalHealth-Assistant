@@ -152,6 +152,7 @@ def get_messages(
         ).all()
 
         result.append({
+            "id": message.id,
             "sender": message.sender,
             "message": message.message,
             "attachments": [

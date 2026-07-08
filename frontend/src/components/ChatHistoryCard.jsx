@@ -51,7 +51,9 @@ function ChatHistoryCard({
                     : "text-gray-500"
                 }`}
             >
-            {t("history.continueChat")}
+            {patientId
+            ? t("history.readChat")
+            : t("history.continueChat")}
             </p>
 
             </div>
